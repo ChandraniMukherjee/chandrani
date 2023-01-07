@@ -1,0 +1,23 @@
+<h1> ami {{name | uppercase}} !!!</h1>
+<br>
+<h1> My salary is {{salary |currency:'USD'}} !!!</h1>
+<br>
+<h1> My JD is {{jd | date:'dd-MM-yyyy'}} !!!</h1>
+
+<br>
+
+<h2>Using angular loop</h2>
+
+<table border="1" cellPadding="5">
+    <tr>
+        <td>Fruit Name</td>
+        <td>Fruit Price</td>
+        <td>Fruit Stock</td>
+    </tr>
+    <tr *ngFor="let x of fruits">
+        <td>{{x.name}}</td>
+        <td>{{x.price}}</td>
+        <td>{{x.stock}}</td>
+
+    </tr>
+</table>>
